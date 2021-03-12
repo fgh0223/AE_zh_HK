@@ -1,7 +1,7 @@
 #---- 1.13 or newer only enchantments ----#
 planter:
-  display: '%group-color%耕種者(planter)'
-  description: "把種子耕種在 3x3 的空間\n使用時需要 shift+右鍵."
+  display: '%group-color%播種'
+  description: "把種子播種在 3x3 格的土地上\n需要在潛行下按右鍵使用"
   applies-to: 'Hoes'
   type: 'RIGHT_CLICK'
   group: 'ULTIMATE'
@@ -28,8 +28,8 @@ planter:
       effects:
         - 'PLANT_SEEDS:3'
 strike:
-  display: '%group-color%雷電打擊(Strike)'
-  description: "有一定機會會產生閃電\n轟擊對手."
+  display: '%group-color%雷霆重擊'
+  description: "24-40％機率在你的敵人處\n召喚一道閃電.（冷卻：3-4秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'SIMPLE'
@@ -54,8 +54,8 @@ strike:
       effects:
         - 'LIGHTNING %victim%'
 impact:
-  display: '%group-color%彈著加成(Impact)'
-  description: "有紀律造成雙倍傷害."
+  display: '%group-color%魚叉突刺'
+  description: "5-14％機率對敵人造成雙倍傷害.（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'ELITE'
@@ -85,8 +85,8 @@ impact:
       effects:
         - 'DOUBLE_DAMAGE %victim%'
 twinge:
-  display: '%group-color%纏繞放血(Twinge)'
-  description: "是你的對手流血\n限定近攻有效."
+  display: '%group-color%苦難之棘'
+  description: "對你的敵人造成3秒的流血傷害\n僅限近身攻擊.（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -101,7 +101,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4You''re bleeding! %victim%'
+        - 'MESSAGE:&4你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -112,7 +112,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4You''re bleeding! %victim%'
+        - 'MESSAGE:&4你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -123,7 +123,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4You''re bleeding! %victim%'
+        - 'MESSAGE:&4你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -134,7 +134,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4You''re bleeding! %victim%'
+        - 'MESSAGE:&4你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -142,8 +142,8 @@ twinge:
 #---- end of: 1.13 or newer only enchantments ----#
 
 jellylegs:
-  display: '%group-color%彈性雙腳(Jelly Legs)'
-  description: "有機率無視掉落傷害."
+  display: '%group-color%落地無聲'
+  description: "40-100％機率無視掉落傷害."
   applies-to: 'Boots'
   type: 'FALL_DAMAGE'
   group: 'ULTIMATE'
@@ -154,19 +154,19 @@ jellylegs:
       chance: 40
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&lNegated Fall Damage &b&l***'
+        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
     2:
       chance: 80
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&lNegated Fall Damage &b&l***'
+        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
     3:
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&lNegated Fall Damage &b&l***'
+        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
 restore:
-  display: '%group-color%耐久回復(Restore)'
-  description: "道具即將損壞時, 道具會有機會\n消耗這個附魔並且維修\n"
+  display: '%group-color%工具救星'
+  description: "工具損壞時, 有40-100％機率\n消耗這個附魔來回復\n工具一半耐久值"
   applies-to: 'Tools'
   type: 'ITEM_BREAK'
   group: 'ULTIMATE'
@@ -180,28 +180,28 @@ restore:
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&lItem Restored &6&l***'
+        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
     2:
       chance: 60
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&lItem Restored &6&l***'
+        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
     3:
       chance: 80
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&lItem Restored &6&l***'
+        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
     4:
       chance: 100
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&lItem Restored &6&l***'
+        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
 shuffle:
-  display: '%group-color%搞亂(Shuffle)'
-  description: 'Shuffles opponent''s hotbar.'
+  display: '%group-color%重新洗牌'
+  description: '被攻擊時,有5-8％機率隨機調亂\n敵人的物品快捷欄.（冷卻：20-15秒）'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'SIMPLE'
@@ -224,8 +224,8 @@ shuffle:
       effects:
         - 'RANDOMIZE_HOTBAR %attacker%'
 takeoff:
-  display: '%group-color%飛行'
-  description: '穿著時候可以飛行'
+  display: '%group-color%飛翔'
+  description: '讓穿戴者獲得飛行能力'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -235,10 +235,10 @@ takeoff:
     1:
       effects:
         - 'FLY'
-        - 'MESSAGE:&eYour &6flying &ehas been toggled!'
+        - 'MESSAGE:&e你 &e開啟了 &6飛行模式 &e!'
 aquatic:
-  display: '%group-color%親水性(Aquatic)'
-  description: '給予永久水中呼吸.'
+  display: '%group-color%氧氣輸送'
+  description: '給予你水呼吸能力.'
   applies-to: 'Helmets'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -249,8 +249,8 @@ aquatic:
       effects:
         - 'POTION:WATER_BREATHING:0'
 autosmelt:
-  display: '%group-color%自動溶煉(Auto Smelt)'
-  description: "挖掘礦物的時候\n會自動溶煉礦物."
+  display: '%group-color%熾熱熔火'
+  description: "41-100％機率將礦石\n溶煉為礦石錠."
   applies-to: 'Pickaxes'
   type: 'MINING'
   group: 'SIMPLE'
@@ -270,8 +270,8 @@ autosmelt:
       effects:
         - 'SMELT'
 confusion:
-  display: '%group-color%混亂(Confusion)'
-  description: "有機率令您的對手\n獲得嘔心效果."
+  display: '%group-color%混亂砍擊'
+  description: "有13-24％機率使敵人混亂.\n（冷卻：4-6秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SIMPLE'
@@ -312,8 +312,8 @@ etheral:
       effects:
         - 'POTION:FAST_DIGGING:2:80'
 experience:
-  display: '%group-color%經驗加成(Experience)'
-  description: '挖礦時有機率獲得經驗值.'
+  display: '%group-color%經驗進化之時'
+  description: '挖礦時有15-75％機率獲得2-5倍\n經驗值.（冷卻：1秒）'
   applies-to: 'Tools'
   type: 'MINING'
   group: 'SIMPLE'
