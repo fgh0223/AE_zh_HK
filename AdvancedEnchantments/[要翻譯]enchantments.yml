@@ -465,7 +465,7 @@ oxygenate:
         - 'FILL_OXYGEN'
 thunderingblow:
   display: '%group-color%霹靂一閃'
-  description: "雷之呼吸第一式，使敵人遭受雷擊.\n （12-24％機率，冷卻：6-3秒）"
+  description: "雷之呼吸第一式，使命中的敵人遭受雷擊.\n （12-24％機率，冷卻：6-3秒）"
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -542,8 +542,8 @@ headless:
       effects:
         - 'DROP_HEAD %victim%'
 obliterate:
-  display: '%group-color%巨力抹煞(Obliterate)'
-  description: '30-54％機率強力擊退對方.'
+  display: '%group-color%洪荒之力'
+  description: '30-54％機率擊退敵人1-3格./n（冷卻：12-13秒)'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -576,8 +576,8 @@ obliterate:
       effects:
         - 'PULL_AWAY:3.0 %victim%'
 epicness:
-  display: '%group-color%富麗堂皇(Epicness)'
-  description: '攻擊時帶有粒子效果以及聲音效果.'
+  display: '%group-color%富麗堂皇'
+  description: '命中敵人時釋出煙霧粒子/n及地獄幽靈尖叫聲.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -603,8 +603,8 @@ epicness:
         - 'PARTICLE:LARGE_SMOKE:50:1 %victim%'
         - 'PLAY_SOUND:GHAST_SCREAM'
 lifebloom:
-  display: '%group-color%生命綻放(Lifebloom)'
-  description: "治癒身邊友軍\n並且暫緩你的死亡\n範圍：10格內."
+  display: '%group-color%生命綻放'
+  description: "死亡時有20-50％機率治癒10格內/n的友方生物40點血量.（冷卻：10-15秒）"
   applies-to: 'Leggings'
   type: 'DEATH'
   group: 'UNIQUE'
@@ -616,25 +616,25 @@ lifebloom:
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     2:
       chance: 30
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     3:
       chance: 40
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     4:
       chance: 50
       cooldown: 15
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     5:
       chance: 50
       cooldown: 15
