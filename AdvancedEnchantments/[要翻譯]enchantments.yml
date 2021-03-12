@@ -1,7 +1,7 @@
 #---- 1.13 or newer only enchantments ----#
 planter:
   display: '%group-color%播種'
-  description: "把種子播種在 3x3 格的土地上\n需要在潛行下按右鍵使用"
+  description: "把種子播種在3x3格的土地上\n在潛行下按右鍵使用."
   applies-to: 'Hoes'
   type: 'RIGHT_CLICK'
   group: 'ULTIMATE'
@@ -29,7 +29,7 @@ planter:
         - 'PLANT_SEEDS:3'
 strike:
   display: '%group-color%雷霆重擊'
-  description: "24-40％機率在你的敵人處\n召喚一道閃電.（冷卻：3-4秒）"
+  description: "對其他玩家投擲時,有24-40％機率\n召喚一道閃電.（冷卻：3-4秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'SIMPLE'
@@ -54,8 +54,8 @@ strike:
       effects:
         - 'LIGHTNING %victim%'
 impact:
-  display: '%group-color%魚叉突刺'
-  description: "5-14％機率對敵人造成雙倍傷害.（冷卻：3-6秒）"
+  display: '%group-color%衝擊波'
+  description: "對其他玩家投擲時,有5-14％機率\n造成雙倍傷害.（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'ELITE'
@@ -85,8 +85,8 @@ impact:
       effects:
         - 'DOUBLE_DAMAGE %victim%'
 twinge:
-  display: '%group-color%苦難之棘'
-  description: "對你的敵人造成3秒的流血傷害\n僅限近身攻擊.（冷卻：3-6秒）"
+  display: '%group-color%痛苦之棘'
+  description: "近身攻擊其他玩家時,有5-14％機率造成3次\n1-3點流血傷害及100秒緩速Ⅰ效果\n（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -165,8 +165,8 @@ jellylegs:
         - 'STOP_ATTACK'
         - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
 restore:
-  display: '%group-color%工具救星'
-  description: "工具損壞時, 有40-100％機率\n消耗這個附魔來回復\n工具一半耐久值"
+  display: '%group-color%厄運救星'
+  description: "工具損壞時,有40-100％機率\n消耗這個附魔來回復\n工具一半耐久值"
   applies-to: 'Tools'
   type: 'ITEM_BREAK'
   group: 'ULTIMATE'
@@ -225,7 +225,7 @@ shuffle:
         - 'RANDOMIZE_HOTBAR %attacker%'
 takeoff:
   display: '%group-color%飛翔'
-  description: '讓穿戴者獲得飛行能力'
+  description: '讓穿戴者獲得飛行的能力'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -238,7 +238,7 @@ takeoff:
         - 'MESSAGE:&e你 &e開啟了 &6飛行模式 &e!'
 aquatic:
   display: '%group-color%氧氣輸送'
-  description: '給予你水呼吸能力.'
+  description: '讓穿戴者獲得水中呼吸的能力.'
   applies-to: 'Helmets'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -271,7 +271,7 @@ autosmelt:
         - 'SMELT'
 confusion:
   display: '%group-color%混亂砍擊'
-  description: "有13-24％機率使敵人混亂.\n（冷卻：4-6秒）"
+  description: "有13-24％機率使其他玩家陷入\n40-120秒的混亂Ⅰ效果.（冷卻：4-6秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SIMPLE'
@@ -295,7 +295,7 @@ confusion:
         - 'POTION:CONFUSION:0:120 %victim%'
 etheral:
   display: '%group-color%亢奮(Etheral)'
-  description: "擊殺怪物時會獲得80秒挖礦加速Ⅰ-Ⅲ效果"
+  description: "擊殺怪物時會獲得80秒\n挖掘加速Ⅰ-Ⅲ效果"
   applies-to: 'Sword'
   type: 'KILL_MOB'
   group: 'SIMPLE'
@@ -348,8 +348,8 @@ experience:
       effects:
         - 'EXP:<random number>2-5</random number>'
 haste:
-  display: '%group-color%挖礦加速(Haste)'
-  description: '給予挖礦加速效果.'
+  display: '%group-color%挖礦加速'
+  description: '讓手持者獲得挖掘加速Ⅰ-Ⅲ效果.'
   applies-to: 'Tools'
   type: 'HELD'
   group: 'SIMPLE'
@@ -369,7 +369,7 @@ haste:
         - 'POTION:FAST_DIGGING:2'
 insomnia:
   display: '%group-color%失眠(Insomnia)'
-  description: "給予你的對手移動減速，挖礦減速\n以及."
+  description: "10-22％機率使敵人遭受40-100秒\n緩速Ⅰ-Ⅲ混亂Ⅰ-Ⅲ及挖掘減速Ⅰ-Ⅲ效果.\n（冷卻：10-8秒）"
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -426,8 +426,8 @@ insomnia:
         - 'POTION:CONFUSION:2:80 %victim%'
         - 'POTION:SLOW_DIGGING:2:100 %victim%'
 lightning:
-  display: '%group-color%雷霆閃電（Lightning）'
-  description: "有一定機會會產生閃電\n轟擊對手."
+  display: '%group-color%狂暴閃電之箭'
+  description: "弓矢命中敵人之處,\n即為電閃雷鳴轟擊之時.\n（24-40％機率,冷卻：3秒）"
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'SIMPLE'
@@ -451,8 +451,8 @@ lightning:
       effects:
         - 'LIGHTNING %victim%'
 oxygenate:
-  display: '%group-color%氧氣加成(Oxygenate)'
-  description: "在水中破壞方塊時\n會提升氧氣濃度."
+  display: '%group-color%氧氣提煉'
+  description: "給予你從方塊中挖取氧氣的能力."
   applies-to: 'Pickaxe'
   type: 'MINING'
   group: 'SIMPLE'
@@ -464,8 +464,8 @@ oxygenate:
       effects:
         - 'FILL_OXYGEN'
 thunderingblow:
-  display: '%group-color%雷霆轟炸(Thundering Blow)'
-  description: '近距離攻擊時會有雷電轟炸對手.'
+  display: '%group-color%霹靂一閃'
+  description: "雷之呼吸第一式，使敵人遭受雷擊.\n （12-24％機率，冷卻：6-3秒）"
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -488,8 +488,8 @@ thunderingblow:
       effects:
         - 'LIGHTNING %victim%'
 glowing:
-  display: '%group-color%夜視(Glowing)'
-  description: '提供永久夜視效果.'
+  display: '%group-color%黎明之光'
+  description: "讓穿戴者獲得夜視的能力."
   applies-to: 'Helmet'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -500,8 +500,8 @@ glowing:
       effects:
         - 'POTION:NIGHT_VISION:0'
 decapitation:
-  display: '%group-color%斬首(Decapitation)'
-  description: "攻擊的對手會有機率掉落\n他們的頭，當他們死亡."
+  display: '%group-color%頭顱斬擊者'
+  description: "20-60％機率砍斷被殺玩家的頭."
   applies-to: 'Axes'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -521,8 +521,8 @@ decapitation:
       effects:
         - 'DROP_HEAD %victim%'
 headless:
-  display: '%group-color%無頭(Headless)'
-  description: "當對手死亡\n會有機率掉落頭顱."
+  display: '%group-color%血腥頭顱收割者'
+  description: "20-60％機率斬斷被殺玩家的頭."
   applies-to: 'Swords'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -543,7 +543,7 @@ headless:
         - 'DROP_HEAD %victim%'
 obliterate:
   display: '%group-color%巨力抹煞(Obliterate)'
-  description: '強力擊退對方.'
+  description: '30-54％機率強力擊退對方.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
