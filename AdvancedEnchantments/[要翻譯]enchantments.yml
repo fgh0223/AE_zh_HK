@@ -1,7 +1,7 @@
 #---- 1.13 or newer only enchantments ----#
 planter:
   display: '%group-color%播種'
-  description: "把種子播種在3x3格的土地上\n在潛行下按右鍵使用."
+  description: "把種子播種在3x3格的土地上\n需要潛行及按右鍵使用."
   applies-to: 'Hoes'
   type: 'RIGHT_CLICK'
   group: 'ULTIMATE'
@@ -29,7 +29,7 @@ planter:
         - 'PLANT_SEEDS:3'
 strike:
   display: '%group-color%雷霆重擊'
-  description: "對其他玩家投擲時,有24-40％機率\n召喚一道閃電.（冷卻：3-4秒）"
+  description: "對玩家投擲時,有24-40％機率\n在對方處召喚一道閃電.\n（冷卻：3-4秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'SIMPLE'
@@ -55,7 +55,7 @@ strike:
         - 'LIGHTNING %victim%'
 impact:
   display: '%group-color%衝擊波'
-  description: "對其他玩家投擲時,有5-14％機率\n造成雙倍傷害.（冷卻：3-6秒）"
+  description: "對玩家投擲時,有5-14％機率\n造成雙倍傷害.（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'BOW'
   group: 'ELITE'
@@ -86,7 +86,7 @@ impact:
         - 'DOUBLE_DAMAGE %victim%'
 twinge:
   display: '%group-color%痛苦之棘'
-  description: "近身攻擊其他玩家時,有5-14％機率造成3次\n1-3點流血傷害及100秒緩速Ⅰ效果\n（冷卻：3-6秒）"
+  description: "近身攻擊玩家時,有5-14％機率\n在3秒內造成3次1-3點\n流血傷害及5秒緩慢Ⅰ效果\n（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -101,7 +101,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4你正在流血! %victim%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&c&l痛苦之棘&7]: &c你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -112,7 +112,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4你正在流血! %victim%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&c&l痛苦之棘&7]: &c你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -123,7 +123,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4你正在流血! %victim%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&c&l痛苦之棘&7]: &c你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -134,7 +134,7 @@ twinge:
       effects:
         - 'POTION:SLOW:0:100 %victim%'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
-        - 'MESSAGE:&4你正在流血! %victim%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&c&l痛苦之棘&7]: &c你正在流血! %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
@@ -154,19 +154,19 @@ jellylegs:
       chance: 40
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l落地無聲&7]:  &b無視了掉落傷害!'
     2:
       chance: 80
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l落地無聲&7]:  &b無視了掉落傷害!'
     3:
       effects:
         - 'STOP_ATTACK'
-        - 'MESSAGE:&b&l*** &f&l無視掉落傷害 &b&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l落地無聲&7]:  &b無視了掉落傷害!'
 restore:
   display: '%group-color%厄運救星'
-  description: "工具損壞時,有40-100％機率\n消耗這個附魔來回復\n工具一半耐久值"
+  description: "工具損壞時,有40-100％機率\n回復工具一半耐久值,\n但附魔會因此消失."
   applies-to: 'Tools'
   type: 'ITEM_BREAK'
   group: 'ULTIMATE'
@@ -180,28 +180,28 @@ restore:
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l厄運救星&7]:  &b附魔犧牲了自己來拯救損壞的道具!'
     2:
       chance: 60
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l厄運救星&7]:  &b附魔犧牲了自己來拯救損壞的道具!'
     3:
       chance: 80
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l厄運救星&7]:  &b附魔犧牲了自己來拯救損壞的道具!'
     4:
       chance: 100
       effects:
         - 'REMOVE_ENCHANT:restore'
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
-        - 'MESSAGE:&6&l*** &e&l道具消耗了附魔來避免損壞 &6&l***'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l厄運救星&7]:  &b附魔犧牲了自己來拯救損壞的道具!'
 shuffle:
   display: '%group-color%洗牌'
-  description: '被攻擊時,有5-8％機率隨機調亂\n敵人的物品快捷欄.（冷卻：20-15秒）'
+  description: '被玩家近身攻擊時,有5-8％機率調亂\n對方的物品快捷欄.（冷卻：20-15秒）'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'SIMPLE'
@@ -225,7 +225,7 @@ shuffle:
         - 'RANDOMIZE_HOTBAR %attacker%'
 takeoff:
   display: '%group-color%飛翔'
-  description: '讓穿戴者獲得飛行的能力'
+  description: '讓穿戴者獲得飛行的能力.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -235,10 +235,10 @@ takeoff:
     1:
       effects:
         - 'FLY'
-        - 'MESSAGE:&e你 &e開啟了 &6飛行模式 &e!'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&a&l飛翔&7]:  &a你會飛行了!'
 aquatic:
   display: '%group-color%氧氣輸送'
-  description: '讓穿戴者獲得水中呼吸的能力.'
+  description: '讓穿戴者獲得水下呼吸的能力.'
   applies-to: 'Helmets'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -271,7 +271,7 @@ autosmelt:
         - 'SMELT'
 confusion:
   display: '%group-color%混亂砍擊'
-  description: "有13-24％機率使其他玩家陷入\n40-120秒的混亂Ⅰ效果.（冷卻：4-6秒）"
+  description: "13-24％機率使命中的玩家陷入\n2-6秒混亂Ⅰ效果.（冷卻：4-6秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SIMPLE'
@@ -295,7 +295,7 @@ confusion:
         - 'POTION:CONFUSION:0:120 %victim%'
 etheral:
   display: '%group-color%亢奮(Etheral)'
-  description: "擊殺怪物時會獲得80秒\n挖掘加速Ⅰ-Ⅲ效果"
+  description: "擊殺怪物後會獲得4秒\n挖掘加速Ⅰ-Ⅲ效果"
   applies-to: 'Sword'
   type: 'KILL_MOB'
   group: 'SIMPLE'
@@ -313,7 +313,7 @@ etheral:
         - 'POTION:FAST_DIGGING:2:80'
 experience:
   display: '%group-color%經驗進化之時'
-  description: '挖礦時有15-75％機率獲得2-5倍\n經驗值.（冷卻：1秒）'
+  description: '15-75％機率從礦石中獲得\n2-5倍經驗值.（冷卻：1秒）'
   applies-to: 'Tools'
   type: 'MINING'
   group: 'SIMPLE'
@@ -348,7 +348,7 @@ experience:
       effects:
         - 'EXP:<random number>2-5</random number>'
 haste:
-  display: '%group-color%挖礦加速'
+  display: '%group-color%強化效益'
   description: '讓手持者獲得挖掘加速Ⅰ-Ⅲ效果.'
   applies-to: 'Tools'
   type: 'HELD'
@@ -369,7 +369,7 @@ haste:
         - 'POTION:FAST_DIGGING:2'
 insomnia:
   display: '%group-color%失眠(Insomnia)'
-  description: "10-22％機率使敵人遭受40-100秒\n緩速Ⅰ-Ⅲ混亂Ⅰ-Ⅲ及挖掘減速Ⅰ-Ⅲ效果.\n（冷卻：10-8秒）"
+  description: "10-22％機率使命中的敵人遭受2-5秒\n緩慢Ⅰ-Ⅲ混亂Ⅰ-Ⅲ及挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：10-8秒）"
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -452,7 +452,7 @@ lightning:
         - 'LIGHTNING %victim%'
 oxygenate:
   display: '%group-color%氧氣提煉'
-  description: "給予你從方塊中挖取氧氣的能力."
+  description: "讓手持者獲得方塊中挖取氧氣的能力."
   applies-to: 'Pickaxe'
   type: 'MINING'
   group: 'SIMPLE'
@@ -501,7 +501,7 @@ glowing:
         - 'POTION:NIGHT_VISION:0'
 decapitation:
   display: '%group-color%頭顱斬擊者'
-  description: "20-60％機率砍斷被殺玩家的頭."
+  description: "20-60％機率獲得被殺玩家的頭."
   applies-to: 'Axes'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -522,7 +522,7 @@ decapitation:
         - 'DROP_HEAD %victim%'
 headless:
   display: '%group-color%血腥頭顱收割者'
-  description: "20-60％機率斬斷被殺玩家的頭."
+  description: "20-60％機率獲得被殺玩家的頭."
   applies-to: 'Swords'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -543,7 +543,7 @@ headless:
         - 'DROP_HEAD %victim%'
 obliterate:
   display: '%group-color%洪荒之力'
-  description: '30-54％機率擊退敵人1-3格./n（冷卻：12-13秒)'
+  description: '30-54％機率擊退敵人1-3格.\n（冷卻：12-13秒)'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -577,7 +577,7 @@ obliterate:
         - 'PULL_AWAY:3.0 %victim%'
 epicness:
   display: '%group-color%富麗堂皇'
-  description: '命中敵人時釋出煙霧粒子/n及地獄幽靈尖叫聲.'
+  description: '命中敵人時有20-60％機率釋出\n煙霧粒子及地獄幽靈尖叫聲.\n（冷卻：3秒）'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -604,7 +604,7 @@ epicness:
         - 'PLAY_SOUND:GHAST_SCREAM'
 lifebloom:
   display: '%group-color%生命綻放'
-  description: "死亡時有20-50％機率治癒10格內/n的友方生物40點血量.（冷卻：10-15秒）"
+  description: "死亡時有20-50％機率為10格內\n的友方生物回復40點血量.\n（冷卻：10-15秒）"
   applies-to: 'Leggings'
   type: 'DEATH'
   group: 'UNIQUE'
@@ -616,34 +616,34 @@ lifebloom:
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     2:
       chance: 30
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     3:
       chance: 40
       cooldown: 10
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     4:
       chance: 50
       cooldown: 15
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &e生命綻放 &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
     5:
       chance: 50
       cooldown: 15
       effects:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
-        - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
 famine:
-  display: '%group-color%饑荒(Famine)'
-  description: "有機率令你的對手遭遇飢餓效果."
+  display: '%group-color%極度飢餓しなさい'
+  description: "12-22％機率使命中的玩家遭受4-6秒\n飢餓Ⅰ-Ⅱ效果.（冷卻：8秒）"
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'UNIQUE'
@@ -672,8 +672,8 @@ famine:
       effects:
         - 'POTION:HUNGER:1:120 %victim%'
 obsidiandestroyer:
-  display: '%group-color%黑曜石粉碎裝置(Obsidian Destroyer)'
-  description: '有機率即時破壞黑曜石.'
+  display: '%group-color%黑曜石鎬'
+  description: '15-80％機率即時破壞方塊,\n黑曜石及不能破壞的方塊除外.\n（冷卻：8-3秒）'
   applies-to: 'Pickaxe'
   type: 'SWING'
   group: 'UNIQUE'
@@ -721,8 +721,8 @@ obsidiandestroyer:
       effects:
         - 'BREAK'
 berserk:
-  display: '%group-color%狂戰士(Berserk)'
-  description: "有機率提供傷害加成\n但有挖礦減速."
+  display: '%group-color%狂戰士'
+  description: "命中敵人時,有4-20％機率獲得\n3-5秒力量Ⅰ-Ⅱ及挖掘疲勞Ⅰ-Ⅱ效果.\n（冷卻8-4秒）"
   applies-to: 'Axes'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -760,8 +760,8 @@ berserk:
         - 'POTION:SLOW_DIGGING:1:100 %attacker%'
         - 'POTION:INCREASE_DAMAGE:1:100 %attacker%'
 ward:
-  display: '%group-color%傷害轉化(Ward)'
-  description: "有機率吸收敵人的傷害\n並且治癒你"
+  display: '%group-color%守護'
+  description: "3-15％機率擋下敵人的近身攻擊\n並獲得4秒吸收Ⅰ效果.\n（冷卻：5秒）"
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -793,8 +793,8 @@ ward:
         - 'STOP_ATTACK'
         - 'POTION:ABSORPTION:0:80 %victim%'
 curse:
-  display: '%group-color%死亡咀咒(Curse)'
-  description: '低血量時，給予力量加乘，移動減速\n以及抗性效果.'
+  display: '%group-color%降咒'
+  description: '受到敵人近身攻擊且血量低於10點時,有10-18％機率\n獲得2-4秒力量Ⅰ-Ⅱ及抗性Ⅰ-Ⅱ效果,\n並使敵人遭受5秒挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：7秒）'
   applies-to: 'Chestplate'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -847,8 +847,8 @@ curse:
         - 'POTION:INCREASE_DAMAGE:1:80 %victim%'
         - 'POTION:DAMAGE_RESISTANCE:1:80 %victim%'
 endershift:
-  display: '%group-color%終界轉移(EnderShift)'
-  description: '低血量時給予移動加速以及吸收效果.'
+  display: '%group-color%終界連結'
+  description: '受到玩家近身攻擊且血量低於6點時,\n有16-18％機率獲得6秒速度Ⅱ\n以及4秒吸收Ⅰ-Ⅲ效果.\n（冷卻：6-12秒）'
   applies-to: 'Helmet, Boots'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -863,7 +863,7 @@ endershift:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'POTION:SPEED:1:120 %victim%'
-        - 'MESSAGE:&dYou were about to die, so you have entered the Ender Dimension!'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l終界連結&7]:  &b快死的你進入了終界維度!'
         - 'POTION:ABSORPTION:0:80 %victim%'
     2:
       chance: 17
@@ -872,7 +872,7 @@ endershift:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'POTION:SPEED:1:120 %victim%'
-        - 'MESSAGE:&dYou were about to die, so you have entered the Ender Dimension!'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l終界連結&7]:  &b快死的你進入了終界維度!'
         - 'POTION:ABSORPTION:1:80 %victim%'
     3:
       chance: 18
@@ -881,11 +881,11 @@ endershift:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'POTION:SPEED:1:120 %victim%'
-        - 'MESSAGE:&dYou were about to die, so you have entered the Ender Dimension!'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l終界連結&7]:  &b快死的你進入了終界維度!'
         - 'POTION:ABSORPTION:2:80 %victim%'
 explosive:
-  display: '%group-color%爆炸攻擊(Explosive)'
-  description: '弓箭擊中會產生爆炸效果.'
+  display: '%group-color%爆裂箭矢'
+  description: '20-60％機率在命中的敵人處\n產生爆炸效果.（冷卻：7-9秒）'
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'UNIQUE'
@@ -920,7 +920,7 @@ explosive:
         - 'TNT %victim%'
 featherweight:
   display: '%group-color%輕盈羽毛(Featherweight)'
-  description: '有機率短暫提供挖礦加速.'
+  description: '命中敵人時,有35-75％機率\n獲得3-5秒挖掘加速Ⅰ-Ⅲ效果.\n（冷卻：2秒）'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -943,8 +943,8 @@ featherweight:
       effects:
         - 'POTION:FAST_DIGGING:2:100'
 molten:
-  display: '%group-color%燃燒炎上(Molten)'
-  description: '有機率使你的對手著火.'
+  display: '%group-color%火焰荊棘之鎧'
+  description: '21-63％機率使近身攻擊你的敵人n遭受燃燒Ⅱ-Ⅷ的效果.（冷卻：2秒）'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -972,8 +972,8 @@ molten:
       effects:
         - 'FLAME:8 %attacker%'
 ravenous:
-  display: '%group-color%戰爭永動(Ravenous)'
-  description: "戰爭中為你恢復飽食度."
+  display: '%group-color%戰爭永動'
+  description: "命中敵人時,有14-26％機率\n獲得1-4點飽食度.（冷卻：2秒）"
   applies-to: 'Axes'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -1002,7 +1002,7 @@ ravenous:
         - 'ADD_FOOD:<random number>1-4</random number> %attacker%'
 commander:
   display: '%group-color%指揮官(Commander)'
-  description: "給予鄰近玩家挖礦加速."
+  description: "受玩家近身攻擊時,有6-18％機率\n為5格內的友方生物提供7秒\n挖掘加速Ⅰ效果.（冷卻：6秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -1738,7 +1738,7 @@ reforged:
         - 'ADD_DURABILITY_ITEM:-5'
 snare:
   display: '%group-color%囚籠纏繞(Snare)'
-  description: "有機率令對手受到緩速效果以及挖礦減速\n必須使用投擲物攻擊才能有效."
+  description: "有機率使對手受到緩速效果以及挖礦減速\n必須使用投擲物攻擊才能有效."
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
