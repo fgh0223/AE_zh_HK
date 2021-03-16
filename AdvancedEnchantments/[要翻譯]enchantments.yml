@@ -1503,7 +1503,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     2:
       chance: 15
       cooldown: 2
@@ -1511,7 +1511,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     3:
       chance: 19
       cooldown: 2
@@ -1519,7 +1519,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     4:
       chance: 24
       cooldown: 2
@@ -1527,7 +1527,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     5:
       chance: 29
       cooldown: 2
@@ -1535,7 +1535,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     6:
       chance: 32
       cooldown: 2
@@ -1543,7 +1543,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
     7:
       chance: 40
       cooldown: 2
@@ -1551,7 +1551,7 @@ execute:
         - "%victim health% > 6 : %stop%"
       effects:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
-        - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
+        - 'MESSAGE:&7[&a附魔&7]: &l[&b&l處決&7&l]:  &b你對敵人造成大量傷害! %attacker%'
 frozen:
   display: '%group-color%寒霜'
   description: "19-26％機率使近身攻擊你的敵人\n遭受5秒緩慢Ⅰ-Ⅱ效果.\n（冷卻：6秒）"
@@ -1790,7 +1790,7 @@ springs:
         - 'POTION:JUMP:2'
 stormcaller:
   display: '%group-color%暴風召喚(Stormcaller)'
-  description: '雷電會轟在攻擊你的敵人身上.'
+  description: '受敵人近身攻擊時，有17-41％機率\n使對方遭受雷擊.（冷卻：4-5秒）'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -1823,7 +1823,7 @@ stormcaller:
         - 'EXTINGUISH %attacker%'
 demonforged:
   display: '%group-color%惡魔作偽(Demonforged)'
-  description: "令你的敵人消耗耐久度更多."
+  description: "8-17％機率對玩家的裝甲耐久度\n造成1-3點額外損害.（冷卻：6秒）"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1852,7 +1852,7 @@ demonforged:
         - 'DAMAGE_ARMOR:<random number>1-3</random number> %victim%'
 trap:
   display: '%group-color%圈套(Trap)'
-  description: '有機率給予對方緩速效果.'
+  description: '16-27％機率使命中的敵人遭受\n3-9秒緩慢Ⅲ效果.（冷卻3秒）'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -1864,7 +1864,7 @@ trap:
       cooldown: 3
       effects:
         - 'POTION:SLOW:2:60 %victim%'
-        - 'MESSAGE:&b&l** TRAP ** %victim%'
+        - 'MESSAGE:&b&l** TRAP ** %victim%'  $#@$@#$@#$<<<<<-------
     2:
       chance: 21
       cooldown: 3
