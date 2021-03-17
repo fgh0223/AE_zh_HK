@@ -271,7 +271,7 @@ autosmelt:
         - 'SMELT'
 confusion:
   display: '%group-color%混亂砍擊'
-  description: "13-24％機率使命中的玩家遭受\n2-6秒混亂Ⅰ效果.（冷卻：4-6秒）"
+  description: "13-24％機率對命中的玩家造成\n2-6秒混亂Ⅰ效果.（冷卻：4-6秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SIMPLE'
@@ -369,7 +369,7 @@ haste:
         - 'POTION:FAST_DIGGING:2'
 insomnia:
   display: '%group-color%猝睡'
-  description: "10-22％機率使命中的敵人遭受2-5秒\n緩慢Ⅰ-Ⅲ混亂Ⅰ-Ⅲ及挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：10-8秒）"
+  description: "10-22％機率對命中的敵人造成2-5秒\n緩慢Ⅰ-Ⅲ混亂Ⅰ-Ⅲ及挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：10-8秒）"
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -543,7 +543,7 @@ headless:
         - 'DROP_HEAD %victim%'
 obliterate:
   display: '%group-color%洪荒之力'
-  description: '30-54％機率擊退敵人1-3格.\n（冷卻：12-13秒)'
+  description: '30-54％機率擊退命中的敵人數格.\n（冷卻：12-13秒)'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -643,7 +643,7 @@ lifebloom:
         - 'MESSAGE:&7[&a附魔&7]: &l[&b&l生命綻放&7&l]: &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
 famine:
   display: '%group-color%極度飢餓しなさい'
-  description: "12-22％機率使命中的玩家遭受4-6秒\n飢餓Ⅰ-Ⅱ效果.（冷卻：8秒）"
+  description: "12-22％機率對命中的玩家造成4-6秒\n飢餓Ⅰ-Ⅱ效果.（冷卻：8秒）"
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'UNIQUE'
@@ -1233,7 +1233,7 @@ plaguecarrier:
         - 'POTION:BLINDNESS:2:100 %attacker%'
 virus:
   display: '%group-color%病毒纏繞(Virus)'
-  description: "12-24％機率使命中的玩家遭受\n3秒凋零Ⅲ及中毒Ⅲ效果.（冷卻：3秒）"
+  description: "12-24％機率對命中的玩家造成\n3秒凋零Ⅲ及中毒Ⅲ效果.（冷卻：3秒）"
   applies-to: 'Bow'
   type: 'BOW'
   group: 'UNIQUE'
@@ -1342,7 +1342,7 @@ enderslayer:
         - 'INCREASE_DAMAGE:<random number>10-40</random number> %attacker%'
 reaper:
   display: '%group-color%死神(Reaper)'
-  description: "8-14％機率使命中的玩家\n遭受6秒凋零Ⅰ及失明Ⅰ效果.\n（冷卻：16-10秒）"
+  description: "8-14％機率對命中的玩家\n造成6秒凋零Ⅰ及失明Ⅰ效果.\n（冷卻：16-10秒）"
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1424,7 +1424,7 @@ netherslayer:
         - 'INCREASE_DAMAGE:<random number>10-40</random number> %attacker%'
 blind:
   display: '%group-color%失明之刃'
-  description: "17-33％機率使命中的玩遭受\n3-5秒失明Ⅰ-Ⅲ效果.\n（冷卻：3秒）"
+  description: "17-33％機率對命中的玩造成\n3-5秒失明Ⅰ-Ⅲ效果.\n（冷卻：3秒）"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1626,7 +1626,7 @@ paralyze:
         - 'POTION:SLOW_DIGGING:1:100 %victim%'
 poison:
   display: '%group-color%淬毒之刃'
-  description: '6-19％機率使命中的敵人\n遭受4-6秒中毒Ⅰ-Ⅱ效果.\n（冷卻：2秒）'
+  description: '6-19％機率對命中的敵人\n造成4-6秒中毒Ⅰ-Ⅱ效果.\n（冷卻：2秒）'
   applies-to: 'Weapon'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -1738,7 +1738,7 @@ reforged:
         - 'ADD_DURABILITY_ITEM:-5'
 snare:
   display: '%group-color%囚籠纏繞(Snare)'
-  description: "12-29％機率使命中的敵人遭受\n4-6秒緩慢Ⅰ-Ⅱ及挖掘疲勞Ⅰ-Ⅱ效果.\n（冷卻：3秒）"
+  description: "12-29％機率對命中的敵人造成\n4-6秒緩慢Ⅰ-Ⅱ及挖掘疲勞Ⅰ-Ⅱ效果.\n（冷卻：3秒）"
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -1852,7 +1852,7 @@ demonforged:
         - 'DAMAGE_ARMOR:<random number>1-3</random number> %victim%'
 trap:
   display: '%group-color%圈套(Trap)'
-  description: '16-27％機率使命中的敵人遭受\n3-9秒緩慢Ⅲ效果.（冷卻3秒）'
+  description: '16-27％機率對命中的敵人造成\n3-9秒緩慢Ⅲ效果.（冷卻3秒）'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -1878,8 +1878,8 @@ trap:
         - 'POTION:SLOW:2:180 %victim%'
         - 'MESSAGE:&b&l** TRAP ** %victim%'
 undeadruse:
-  display: '%group-color%死靈操控(Undead Ruse)'
-  description: "當你遭到攻擊會有機會召喚殭屍\n騷擾你的對手."
+  display: '%group-color%死靈操控(Undead Ruse)(rename)'
+  description: "受敵人近身攻擊時,有3-22％機率\n喚來2-5隻殭屍盟友.（冷卻：6秒）"
   applies-to: 'Boots'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -1956,8 +1956,8 @@ undeadruse:
         - 'GUARD:ZOMBIE:%victim%'
         - 'GUARD:ZOMBIE:%victim%'
 venom:
-  display: '%group-color%毒液(Venom)'
-  description: '令對方受到中毒效果.'
+  display: '%group-color%淬毒'
+  description: '5-14％機率對命中的敵人\n造成4-6秒中毒Ⅰ-Ⅱ效果.（冷卻：2秒）'
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -1981,8 +1981,8 @@ venom:
       effects:
         - 'POTION:POISON:1:80 %victim%'
 voodoo:
-  display: '%group-color%巫術(Voodoo)'
-  description: '有機會令對方受到虛弱效果.'
+  display: '%group-color%力量衰減'
+  description: '受敵人近身攻擊時,有5-21％機率\n使對方遭受3-6秒虛弱Ⅰ-Ⅱ效果.\n（冷卻：2秒）'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -2021,7 +2021,7 @@ voodoo:
         - 'POTION:WEAKNESS:1:120 %attacker%'
 wither:
   display: '%group-color%凋零(Wither)'
-  description: '有機會令對方受到凋零效果.'
+  description: '受敵人近身攻擊時,有9-21％機率\n使對方遭受3-5秒凋零Ⅰ-Ⅱ效果.\n（冷卻：2秒）'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -2054,8 +2054,8 @@ wither:
       effects:
         - 'POTION:WITHER:1:100 %attacker%'
 smokebomb:
-  display: '%group-color%煙霧炸彈(Smoke Bomb)'
-  description: "當你幾乎死亡，會生成\n一個煙霧炸彈騷擾你的對手."
+  display: '%group-color%煙霧炸彈'
+  description: "受到敵人近身攻擊且血量低於4點時,\n有9-38％機率釋出煙霧粒子,\n並使對方遭受3-6秒失明Ⅰ-Ⅲ效果.\n（冷卻：2秒）"
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2128,7 +2128,7 @@ smokebomb:
         - 'POTION:BLINDNESS:2:120 %attacker%'
 infernal:
   display: '%group-color%地獄火焰(Infernal)'
-  description: '爆炸火焰效果.'
+  description: '15-50％機率對命中的敵人\n造成燃燒Ⅱ-Ⅵ效果.（冷卻：2秒）'
   applies-to: 'Bow'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -2156,7 +2156,7 @@ infernal:
         - 'FLAME:6 %victim%'
 pummel:
   display: '%group-color%捶打(Pummel)'
-  description: "有機率減慢附近敵人\n玩家的移動速度一段時間."
+  description: "17-31％機率對命中的敵人\n造成緩慢Ⅰ-Ⅲ效果.\n（冷卻：4秒）"
   applies-to: 'Axe'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -2183,7 +2183,7 @@ pummel:
         - 'MESSAGE:&b&l** PUMMEL ** %victim%'
 shockwave:
   display: '%group-color%衝擊波動(Shockwave)'
-  description: "有機率反彈走攻擊者\n在你的血量比較低的時候."
+  description: "受玩家近身攻擊且血量低於5點時,\n有10-50％機率彈開對方數格.\n（冷卻：4秒）"
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2227,7 +2227,7 @@ shockwave:
         - 'PULL_AWAY:2.5 %attacker%'
 vampire:
   display: '%group-color%吸血鬼(Vampire)'
-  description: "有機率回血\n當你攻擊了敵人."
+  description: "命中玩家後,有7-23％機率回復1-6點血量.\n（冷卻：4秒）"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -2254,7 +2254,7 @@ vampire:
         - 'ADD_HEALTH:<random number>1-6</random number>'
 farcast:
   display: '%group-color%隔空擊退Farcast'
-  description: "有機會擊退近攻玩家\n當他們攻擊你時會向後擊退他們幾格.\n能夠在你血量低的時候增加生還機率."
+  description: "命中手持劍或斧的玩家時,\n有12-35％機率擊退對方幾格.\n當對方血量低於6點時,\n擊退機率將額外提升3-6％."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ELITE'
@@ -2299,7 +2299,7 @@ farcast:
         - 'PULL_AWAY:2.0 %attacker%'
 greatsword:
   display: '%group-color%巨劍(Greatsword)'
-  description: "當敵人正手持弓\n將會增加對他們的傷害."
+  description: "命中手持弓的玩家時,\n有12-55％機率造成45-205％\n額外傷害.（冷卻：2秒）"
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'ELITE'
@@ -2348,7 +2348,7 @@ greatsword:
         - 'MESSAGE:&b&l** GREATSWORD ** %attacker%'
 hardened:
   display: '%group-color%硬化修復(Hardened)'
-  description: '道具受損有機會回復耐久度.'
+  description: '受玩家近身攻擊時,\n有25-45％機率回復裝甲\n1-2點耐久度.（冷卻：7秒）'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2372,7 +2372,7 @@ hardened:
         - 'ADD_DURABILITY:-2 %victim%'
 rocketescape:
   display: '%group-color%火箭逃離(Rocket Escape)'
-  description: '當你血量低下時自動把你彈射到空中.'
+  description: '受玩家近身攻擊且血量低於6點時,有20-40％機率將你彈高幾格.（冷卻：8秒）'
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ELITE'
