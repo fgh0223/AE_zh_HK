@@ -86,7 +86,7 @@ impact:
         - 'DOUBLE_DAMAGE %victim%'
 twinge:
   display: '%group-color%痛苦之棘'
-  description: "近身攻擊玩家時,有5-14％機率使對方\n遭受5秒緩慢Ⅰ效果,以及\n維持3秒的1-3點流血傷害\n（冷卻：3-6秒）"
+  description: "近身攻擊玩家時,有5-14％機率\n向對方造成每秒1-3點真實傷害,持續3秒,\n並使對方遭受5秒緩慢Ⅰ效果\n（冷卻：3-6秒）"
   applies-to: 'Trident'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -794,7 +794,7 @@ ward:
         - 'POTION:ABSORPTION:0:80 %victim%'
 curse:
   display: '%group-color%降咒'
-  description: '受敵人攻擊且血量低於10點時,有10-18％機率\n獲得2-4秒力量Ⅰ-Ⅱ及抗性Ⅰ-Ⅱ效果,\n並使對方遭受5秒挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：7秒）'
+  description: '受敵人攻擊且自己血量低於10點時,有10-18％機率\n獲得2-4秒力量Ⅰ-Ⅱ及抗性Ⅰ-Ⅱ效果,\n並使對方遭受5秒挖掘疲勞Ⅰ-Ⅲ效果.\n（冷卻：7秒）'
   applies-to: 'Chestplate'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -848,7 +848,7 @@ curse:
         - 'POTION:DAMAGE_RESISTANCE:1:80 %victim%'
 endershift:
   display: '%group-color%終界連結'
-  description: '受玩家攻擊且血量低於6點時,\n有16-18％機率獲得6秒速度Ⅱ\n以及4秒吸收Ⅰ-Ⅲ效果.\n（冷卻：6-12秒）'
+  description: '受玩家攻擊且自己血量低於6點時,\n有16-18％機率獲得6秒速度Ⅱ\n以及4秒吸收Ⅰ-Ⅲ效果.\n（冷卻：6-12秒）'
   applies-to: 'Helmet, Boots'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -1036,7 +1036,7 @@ commander:
         - 'POTION:HASTE:0:140 <aoe> radius=5 target=undamageable </aoe>'
 selfdestruct:
   display: '%group-color%點燃引線'
-  description: "受玩家攻擊且血量低於3點時,\n有23-42％機率在你周圍產生\nTNT爆炸效果.（冷卻：4秒）\n使用這附魔有機會破壞掉落物"
+  description: "受玩家攻擊且自己血量低於3點時,\n有23-42％機率在你周圍產生\nTNT爆炸效果.（冷卻：4秒）\n使用這附魔有機會破壞掉落物"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -1155,7 +1155,7 @@ skillswipe:
         - 'STEAL_EXP:<random number>25-350</random number> %attacker%'
 plaguecarrier:
   display: '%group-color%死靈法師(Plague Carrier)'
-  description: "受敵人攻擊且血量低於4點時,\n有13-69％機率喚來1-3隻苦力怕盟友\n並使對方遭受2-5秒失明Ⅰ-Ⅲ效果.\n（冷卻：3秒）"
+  description: "受敵人攻擊且自己血量低於4點時,\n有13-69％機率喚來1-3隻苦力怕盟友\n並使對方遭受2-5秒失明Ⅰ-Ⅲ效果.\n（冷卻：3秒）"
   applies-to: 'Leggings'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -1468,7 +1468,7 @@ shackle:
         - 'PULL_CLOSER:0.1 %victim%'
 cactus:
   display: '%group-color%荊棘之鎧'
-  description: "18-23％機率擋下玩家的攻擊,\n並向對方造成1-3點傷害.\n（冷卻：7秒）"
+  description: "18-23％機率擋下玩家的攻擊,\n並向對方造成1-3點真實傷害.\n（冷卻：7秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2055,7 +2055,7 @@ wither:
         - 'POTION:WITHER:1:100 %attacker%'
 smokebomb:
   display: '%group-color%煙霧炸彈'
-  description: "受敵人攻擊且血量低於4點時,\n有9-38％機率釋出煙霧粒子,\n並使對方遭受3-6秒失明Ⅰ-Ⅲ效果.\n（冷卻：2秒）"
+  description: "受敵人攻擊且自己血量低於4點時,\n有9-38％機率釋出煙霧粒子,\n並使對方遭受3-6秒失明Ⅰ-Ⅲ效果.\n（冷卻：2秒）"
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2183,7 +2183,7 @@ pummel:
         - 'MESSAGE:&b&l** PUMMEL ** %victim%'
 shockwave:
   display: '%group-color%衝擊波動(Shockwave)'
-  description: "受玩家攻擊且血量低於5點時,\n有10-50％機率彈開對方數格.\n（冷卻：4秒）"
+  description: "受玩家攻擊且自己血量低於5點時,\n有10-50％機率彈開對方數格.\n（冷卻：4秒）"
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2372,7 +2372,7 @@ hardened:
         - 'ADD_DURABILITY:-2 %victim%'
 rocketescape:
   display: '%group-color%火箭逃離(Rocket Escape)'
-  description: '受玩家攻擊且血量低於6點時,\n有20-40％機率將你彈高幾格.\n（冷卻：8秒）'
+  description: '受玩家攻擊且自己血量低於6點時,\n有20-40％機率將你彈高幾格.\n（冷卻：8秒）'
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2612,7 +2612,7 @@ reinforced:
         - 'NEGATE_DAMAGE:<random number>1-35</random number>'
 cleave:
   display: '%group-color%巨斧斬擊(Cleave)'
-  description: "命中玩家時,有4-15％機率\n對1-7格範圍內的敵人\n造成1-3點額外傷害.\n（冷卻：8-14秒）"
+  description: "命中玩家時,有4-15％機率\n對1-7格範圍內的敵人\n造成1-3點真實傷害.\n（冷卻：8-14秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2916,7 +2916,7 @@ blessed:
         - 'MESSAGE:&7[&a附魔&7]: &l[&b&l天使降臨&7&l]:  &b治癒所有負面效果! %attacker%'
 corrupt:
   display: '%group-color%腐敗(Corrupt)'
-  description: "12-31％機率對命中的玩家造成\n每秒2-3點額外傷害,維持3秒.\n（冷卻：4秒）"
+  description: "12-31％機率對命中的玩家造成\n每秒2-3點真實傷害,持續3秒.\n（冷卻：4秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2990,7 +2990,7 @@ ragdoll:
         - 'PULL_AWAY:0.5 %victim%'
 block:
   display: '%group-color%格擋(Block)'
-  description: "16-30％機率擋下敵人50％傷害,\n並向對方造成1-4點傷害.\n（冷卻：4秒）"
+  description: "16-30％機率擋下敵人50％傷害,\n並向對方造成1-4點真實傷害.\n（冷卻：4秒）"
   applies-to: 'Swords'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -3117,7 +3117,7 @@ dodge:
         - 'PLAY_SOUND:BAT_TAKEOFF:0.7 %victim%'
 enrage:
   display: '%group-color%憤怒激昂(Enrage)'
-  description: '當血量低於5點時,有21-33％機率\n對命中的玩家造成1-4點額外傷害.\n（冷卻：５秒)'
+  description: '當自己血量低於5點時,有21-33％機率\n對命中的玩家造成1-4點真實傷害.\n（冷卻：５秒)'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3375,7 +3375,7 @@ marksman:
         - 'INCREASE_DAMAGE:<random number>50-150</random number> %victim%'
 disappear:
   display: '%group-color%消失(Disappear)'
-  description: "受玩家攻擊且血量低於5點時,\n有20-30％機率獲得3-6％隱形效果.\n（冷卻：20秒）"
+  description: "受玩家攻擊且自己血量低於5點時,\n有20-30％機率獲得3-6％隱形效果.\n（冷卻：20秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3470,7 +3470,7 @@ dominate:
         - 'POTION:WEAKNESS:0:80 %attacker%'
 arsonist:
   display: '%group-color%趨炎附勢(Arsonist)'
-  description: "8-16％機率對處於燃燒狀態的玩家\n造成1-3點額外傷害.（冷卻：5-8秒）"
+  description: "8-16％機率對處於燃燒狀態的玩家\n造成1-3點真實傷害.（冷卻：5-8秒）"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3500,7 +3500,7 @@ arsonist:
         - 'ADD_HARM:3 %victim%'
 enderwalker:
   display: '%group-color%終界行者(Ender Walker)'
-  description: "受玩家攻擊時,有9-35％機率\n治癒凋零及中毒效果.\nⅣ-Ⅴ級附魔更能回復1-4點血量.\n（冷卻：8-14秒）."
+  description: "受玩家攻擊時,有9-35％機率\n治癒凋零及中毒效果.\nⅣ-Ⅴ級時更能回復1-4點血量.\n（冷卻：8-14秒）."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3868,7 +3868,7 @@ valor:
         - 'REMOVE_DAMAGE:<random number>18-22</random number> %victim%'
 pacify:
   display: '%group-color%安撫(Pacify)'
-  description: "命中敵人時,有12-30％機率擋下對方的攻擊,\n並向對方造成1-4點額外傷害.\n（冷卻：3秒）"
+  description: "命中敵人時,有12-30％機率擋下對方的攻擊,\n並向對方造成1-4點真實傷害.\n（冷卻：3秒）"
   applies-to: 'Bow'
   type: 'BOW;BOW_MOB'
   group: 'ULTIMATE'
@@ -3949,7 +3949,7 @@ creeperarmor:
         - 'ADD_HEALTH:<random number>1-2</random number>'
 spirits:
   display: '%group-color%精靈守護(Spirits)'
-  description: "有機率召喚一些可以治癒你的烈焰使者\n能夠在戰鬥中回復你和你同伴的血量."
+  description: "受玩家攻擊時,有2-27％機率喚來3-5隻烈焰使者盟友,\n並為5格內的友方生物提供3秒回復Ⅰ效果.\n（冷卻：8點）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -4048,7 +4048,7 @@ spirits:
         - 'POTION:REGENERATION:0:60  <aoe> radius=5 target=undamageable </aoe>'
 bleed:
   display: '%group-color%流血(Bleed)'
-  description: "附加流血效果在敵人身上\n並且降低他們的移動速度."
+  description: "8-60％機率對命中的玩家造成每秒1-3點真實傷害,持續3秒,\n並使對方遭受5秒緩慢Ⅰ-Ⅲ效果.\n（冷卻：無）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -4118,7 +4118,7 @@ bleed:
         
 lavawalker:
   display: '%group-color%岩漿行者(Lava Walker)'
-  description: '可以在岩漿上行走.'
+  description: '讓穿戴者獲得在岩漿上行走的能力.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4130,7 +4130,7 @@ lavawalker:
         - 'LAVA_WALKER'
 impale:
   display: '%group-color%穿刺(Impale)'
-  description: "有機率造成極大程度的傷害攻擊你的對手\n並且一段時間造成減速"
+  description: "4-10％機率對命中的玩家造成雙倍傷害,\n並使對方遭受1-4秒緩慢Ⅴ效果.\n（冷卻：26-20秒）"
   applies-to: 'Bow'
   type: 'BOW'
   group: 'LEGENDARY'
@@ -4164,7 +4164,7 @@ impale:
         - 'POTION:SLOW:4:80 %victim%'
 protection:
   display: '%group-color%保護(Protection)'
-  description: "自動治癒並且為你的同伴回血."
+  description: "受玩家攻擊時,有6-12％機率為5-10格內的友方生物\n治癒中毒,噁心,凋零效果,且回復2-6點血量.\n（冷卻：20-25秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4218,7 +4218,7 @@ protection:
         - 'MESSAGE:&e&l*** &eProtection &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
 torrent:
   display: '%group-color%激流(Torrent)'
-  description: "在水中的時候能夠增加傷害."
+  description: "身處水中近身攻擊玩家時,有8-23％機率\n造成雙倍傷害.（冷卻：3-5秒）"
   applies-to: 'Boots'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4255,7 +4255,7 @@ torrent:
         - 'DOUBLE_DAMAGE'
 judgement:
   display: '%group-color%審判(Judgement)'
-  description: "有機率對你的敵人造成中毒效果\n並且給予你自己回血效果."
+  description: "受玩家攻擊時,有6-16％機率使對方遭受5秒中毒Ⅰ效果,\n並為自己提供5秒回復Ⅰ-Ⅱ效果.\n（冷卻：20—25秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4294,7 +4294,7 @@ judgement:
         - POTION:REGENERATION:1:100 %victim%
 surprise:
   display: '%group-color%驚嚇(Surprise)'
-  description: "有機率傳送到您的對手後面\nand take them by surprise."
+  description: "受玩家攻擊時,有8-21％機率傳送到對方背後.\n（冷卻：5秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4327,7 +4327,7 @@ surprise:
         - 'TELEPORT_BEHIND %victim%'
 stun:
   display: '%group-color%暈眩(stun)'
-  description: "有機率降低你的對手移動速度\n令他們覺得變弱\n並且移除您身上可能有的移動減速效果."
+  description: "命中玩家時,有15-35％機率使對方\n遭受6秒緩慢Ⅰ—Ⅱ,4秒虛弱Ⅰ效果,\n並為自己治癒緩慢效果.（冷卻：6秒）"
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4364,7 +4364,7 @@ stun:
         - 'MESSAGE:&c&l** STUNNED ** %victim%'
 unholy:
   display: '%group-color%邪惡騷擾(Unholy)'
-  description: "有機率給予攻擊你的敵人虛弱以及凋零效果."
+  description: "受玩家攻擊時,有2-10％機率使對方\n遭受3秒凋零Ⅰ-Ⅱ,5秒虛弱Ⅰ效果.\n（冷卻：40秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4382,7 +4382,7 @@ unholy:
       cooldown: 40
       effects:
         - POTION:WITHER:1:60 %attacker%
-        - POTION:WEAKNESS:0:5 %attacker%
+        - POTION:WEAKNESS:0:100 %attacker%
     '3':
       chance: 6
       cooldown: 40
@@ -4403,7 +4403,7 @@ unholy:
         - POTION:WEAKNESS:0:100 %attacker%
 quiver:
   display: '%group-color%顫動(Quiver)'
-  description: '有機率將你的敵人擊飛到空中.'
+  description: '受玩家攻擊時,有8-18％機率使對方彈開幾格.\n（冷卻：10秒）'
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4442,7 +4442,7 @@ quiver:
         - 'PULL_AWAY:3.5'
 fat:
   display: '%group-color%肥胖(Fat)'
-  description: "有機率在收到攻擊時無視一定的傷害\n升級附魔等級."
+  description: "受玩家攻擊時,有5-20％機率擋下10-60％傷害.\nⅢ級-Ⅵ時更能獲得3-5秒吸收Ⅳ-Ⅵ效果.\n（冷卻：10秒）"
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4491,7 +4491,7 @@ fat:
         - 'POTION:ABSORPTION:5:100 %victim%'
 hex:
   display: '%group-color%迷惑(Hex)'
-  description: "當一個目標正被迷惑\n他們所造成的傷害在一段時間之中會減少\n3-7 傷害會反傷給他們."
+  description: "命中玩家時,有8-25％機率透過降低自身10-50％傷害\n來向對方造成3-7點真實傷害.（冷卻：4秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4523,8 +4523,8 @@ hex:
         - 'DECREASE_DAMAGE:<random number>10-50</random number> %attacker%'
         - 'ADD_HARM:<random number>3-7</random number> %victim%'
 barbarian:
-  display: '%group-color%狂戰士(Barbarian)'
-  description: '有機率造成更多的斧頭傷害.'
+  display: '%group-color%野蠻'
+  description: '使用斧命中玩家時,有8-25％機率向對方\n造成25-100％額外傷害.（冷卻：2秒）'
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4561,7 +4561,7 @@ barbarian:
         - 'INCREASE_DAMAGE:<random number>25-100</random number> %victim%'
 clarity:
   display: '%group-color%清晰(Clarity)'
-  description: '移除致盲效果當你受到傷害.'
+  description: '受玩家攻擊時,治癒失明效果.（冷卻：無）#為何有級數之分'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4579,7 +4579,7 @@ clarity:
         - 'CURE:BLINDNESS %victim%'
 deathbringer:
   display: '%group-color%死亡使者(Deathbringer)'
-  description: '有機率造成雙倍傷害.'
+  description: '近身攻擊玩家時,有15-28％機率造成雙倍傷害.\n（冷卻：45秒）'
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4602,8 +4602,8 @@ deathbringer:
       effects:
         - 'DOUBLE_DAMAGE'
 doublestrike:
-  display: '%group-color%雙重打擊'
-  description: '有機率打擊兩次.'
+  display: '%group-color%雙重打擊\二重斬'
+  description: '命中玩家後,有8-19％機率\n在1秒後再造成一樣傷害.\n（冷卻：15秒）'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4633,7 +4633,7 @@ doublestrike:
         - 'MESSAGE:&6&l** DOUBLE STRIKE ** %victim%'
 drunk:
   display: '%group-color%酗酒(Drunk)'
-  description: "獲得移動減速，挖礦減速\n以及攻擊傷害加成."
+  description: "讓穿戴者獲得緩慢Ⅰ-Ⅲ,挖掘疲勞Ⅰ-Ⅲ及\n力量Ⅰ-Ⅲ效果."
   applies-to: 'Helmet'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4662,7 +4662,7 @@ drunk:
         - 'POTION:SLOW:2'
 enlighted:
   display: '%group-color%傷害轉化(Enlighted)'
-  description: '受傷害的時候可以回血.'
+  description: '受玩家攻擊時,有6-12％機率\n回復1-3點血量.（冷卻：30秒）'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4685,8 +4685,8 @@ enlighted:
       effects:
         - 'ADD_HEALTH:<random number>1-3</random number> %victim%'
 gears:
-  display: '%group-color%精良裝備(Gears)'
-  description: '裝備時增加移動速度.'
+  display: '%group-color%極速'
+  description: '讓穿戴者獲得速度Ⅰ-Ⅲ效果.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4704,7 +4704,7 @@ gears:
         - 'POTION:SPEED:2'
 killaura:
   display: '%group-color%死亡光環(Kill Aura)'
-  description: '每次死亡的時候會有機率擊殺多隻怪物.'
+  description: '5-18％機率即時殺死2-5隻被命中的怪物.\n（冷卻：3-6秒）'
   applies-to: 'Swords'
   group: 'LEGENDARY'
   type: 'ATTACK_MOB'
