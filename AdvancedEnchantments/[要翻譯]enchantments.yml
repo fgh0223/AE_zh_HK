@@ -2575,7 +2575,7 @@ distance:
         - 'MESSAGE:&a&l** DISTANCE ** &7(&o%attacker name%&7) %victim%'
 reinforced:
   display: '%group-color% 背部強化(Reinforced)'
-  description: "受玩家攻擊後背時,\n有9-18％機率擋下1-35％傷害.\n（冷卻：3秒）"
+  description: "受玩家攻擊後背時,\n有9-18％機率擋下1-35點傷害.\n（冷卻：3秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -2990,7 +2990,7 @@ ragdoll:
         - 'PULL_AWAY:0.5 %victim%'
 block:
   display: '%group-color%格擋(Block)'
-  description: "16-30％機率擋下敵人50％傷害,\n並向對方造成1-4點真實傷害.\n（冷卻：4秒）"
+  description: "16-30％機率擋下敵人50點傷害,\n並向對方造成1-4點真實傷害.\n（冷卻：4秒）"
   applies-to: 'Swords'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -3615,7 +3615,7 @@ annihilate:
         - 'DAMAGE_ARMOR:4 %victim%'
 heavy:
   display: '%group-color%重力(Heavy)'
-  description: "受使用弓的玩家攻擊時,有4-21％機率\n擋下對方2-10點傷害.（冷卻：4秒）"
+  description: "受使用弓的玩家攻擊時,有4-21％機率\n擋下對方2-10％傷害.（冷卻：4秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3732,7 +3732,7 @@ longbow:
         - 'INCREASE_DAMAGE:<random number>50-100</random number> %attacker%'
 tank:
   display: '%group-color%坦克忍耐(Tank)'
-  description: "受使用斧的玩家攻擊時,有5-16％機率\n擋下對方2-8點傷害.（冷卻：3秒）"
+  description: "受使用斧的玩家攻擊時,有5-16％機率\n擋下對方2-8％傷害.（冷卻：3秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3824,7 +3824,7 @@ unfocus:
         - 'MESSAGE:&a&l** YOU''VE REGAINED FOCUS ** %victim%'
 valor:
   display: '%group-color%勇氣(Valor)'
-  description: "受使用劍的玩家攻擊時,有4-21％機率\n擋下對方1-22點傷害.（冷卻：4秒）"
+  description: "受使用劍的玩家攻擊時,有4-21％機率\n擋下對方1-22％傷害.（冷卻：4秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -4442,7 +4442,7 @@ quiver:
         - 'PULL_AWAY:3.5'
 fat:
   display: '%group-color%肥胖(Fat)'
-  description: "受玩家攻擊時,有5-20％機率擋下10-60％傷害.\nⅢ級-Ⅵ時更能獲得3-5秒吸收Ⅳ-Ⅵ效果.\n（冷卻：10秒）"
+  description: "受玩家攻擊時,有5-20％機率擋下10-60點傷害.\nⅢ級-Ⅵ時更能獲得3-5秒吸收Ⅳ-Ⅵ效果.\n（冷卻：10秒）"
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4737,8 +4737,8 @@ killaura:
       effects:
         - 'KILL_MOB:<random number>3-5</random number> %victim%'
 inquisitive:
-  display: '%group-color%劍道錘煉(Inquisitive)'
-  description: '增加擊殺怪物時候掉落的經驗值.'
+  display: '%group-color%劍道錘煉'
+  description: '擊殺怪物時,有30-45％機率獲得125-200％額外經驗值.\n（冷卻：4秒）'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'LEGENDARY'
@@ -4767,7 +4767,7 @@ inquisitive:
         - 'EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%'
 inversion:
   display: '%group-color%傷害反轉(Inversion)'
-  description: "對你做成的傷害有幾會被格擋\n並且會回你的血."
+  description: "受玩家攻擊時,有8-24％機率擋下對方的攻擊,\n並回復1-5點血量.（冷卻：4秒）"
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4800,7 +4800,7 @@ inversion:
         - 'ADD_HEALTH:<random number>1-5</random number> %victim%'
 lifesteal:
   display: '%group-color%吸血(Lifesteal)'
-  description: "攻擊的時候\n有機會從對手中吸血."
+  description: "9-25％機率從命中的玩家處\n偷取1-5點血量.（冷卻：15秒）"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4834,7 +4834,7 @@ lifesteal:
         - 'STEAL_HEALTH:<random number>1-5</random number> %attacker%'
 overload:
   display: '%group-color%生命超載(Overload)'
-  description: '永久增加血量.'
+  description: '讓穿戴者獲得生命值提升Ⅰ-Ⅲ效果.'
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4910,7 +4910,7 @@ rage:
         - 'BLOOD %victim%'
 silence:
   display: '%group-color%沉靜(Silence)'
-  description: '有機率暫時阻止敵人的自訂附魔效果.'
+  description: '1.8-3.1％機率使命中的玩家無法使用一些自訂附魔效果3-7秒.（冷卻：5秒）'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5043,7 +5043,7 @@ silence:
         - 'MESSAGE:&5&l* SILENCED&r &7[7s] &5&l* %victim%'
 armored:
   display: '%group-color%傷害抵抗(Armored)'
-  description: "降低來自敵人的傷害\n每等級2%."
+  description: "受使用劍的玩家攻擊時,有6-20％機率\n擋下2-8％傷害.（冷卻：8秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5080,7 +5080,7 @@ armored:
         - 'REMOVE_DAMAGE:8 %attacker%'
 exterminator:
   display: '%group-color%驅除法術(Exterminator)'
-  description: "被攻擊的時候，有機會暫時取消對方或附近敵人的\n死靈操控,\n守護者,\n精靈守護\n效果."
+  description: "被玩家攻擊時,有6-18％機率使對無法使用\n死靈操控,\n守護者,\n精靈守護\n自訂附魔效果.（冷卻：13秒）"
   applies-to: 'Leggings'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5110,7 +5110,7 @@ exterminator:
         - 'DISABLE_ACTIVATION:spirits:8 %attacker%'
 blacksmith:
   display: '%group-color%鐵匠(Blacksmith)'
-  description: "有機率至回復你身上最低耐久度的一件裝備\n當你擊中一個玩家\n但是發動效能的時候你造成的傷口只會有50%."
+  description: "命中玩家時,有9-39％機率擋下對方50％傷害,\n並回復你1-2點裝甲耐久度.（冷卻：3秒）"
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5154,7 +5154,7 @@ blacksmith:
         - 'MESSAGE:&6&l** BLACKSMITH ** %attacker%'
 abiding:
   display: '%group-color%永恆不變(Abiding)'
-  description: "擁有此附魔的道具會變成無法破壞耐久度"
+  description: "挖掘及攻擊敵人時,\n工具能修復手持物品.\n（冷卻：無）"
   applies-to: 'Tools'
   type: 'MINING;ATTACK;ATTACK_MOB'
   group: 'LEGENDARY'
