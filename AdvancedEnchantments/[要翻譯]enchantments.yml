@@ -313,7 +313,7 @@ etheral:
         - 'POTION:FAST_DIGGING:2:80'
 experience:
   display: '%group-color%經驗進化之時'
-  description: '15-75％機率從礦石中獲得\n2-5倍經驗值.（冷卻：1秒）'
+  description: '15-75％機率從礦石中獲得\n8-20點額外經驗值.（冷卻：1秒）'
   applies-to: 'Tools'
   type: 'MINING'
   group: 'SIMPLE'
@@ -2612,7 +2612,7 @@ reinforced:
         - 'NEGATE_DAMAGE:<random number>1-35</random number>'
 cleave:
   display: '%group-color%巨斧斬擊(Cleave)'
-  description: "命中玩家時,有4-15％機率\n對1-7格範圍內的敵人\n造成1-3點真實傷害.\n（冷卻：8-14秒）"
+  description: "命中玩家時,有4-15％機率\n對1-7格內的敵人\n造成1-3點真實傷害.\n（冷卻：8-14秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -4524,7 +4524,7 @@ hex:
         - 'ADD_HARM:<random number>3-7</random number> %victim%'
 barbarian:
   display: '%group-color%野蠻'
-  description: '使用斧命中玩家時,有8-25％機率向對方\n造成25-100％額外傷害.（冷卻：2秒）'
+  description: '使用斧命中玩家時,有8-25％機率\n造成25-100％額外傷害.（冷卻：2秒）'
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4738,7 +4738,7 @@ killaura:
         - 'KILL_MOB:<random number>3-5</random number> %victim%'
 inquisitive:
   display: '%group-color%劍道錘煉'
-  description: '擊殺怪物時,有30-45％機率獲得125-200％額外經驗值.\n（冷卻：4秒）'
+  description: '擊殺怪物時,有30-45％機率獲得5-8點額外經驗值.\n（冷卻：4秒）'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'LEGENDARY'
@@ -5154,7 +5154,7 @@ blacksmith:
         - 'MESSAGE:&6&l** BLACKSMITH ** %attacker%'
 abiding:
   display: '%group-color%永恆不變(Abiding)'
-  description: "挖掘及攻擊敵人時,\n工具能修復手持物品.\n（冷卻：無）"
+  description: "挖掘或命中敵人時,\n工具能修復手持物品.\n（冷卻：無）"
   applies-to: 'Tools'
   type: 'MINING;ATTACK;ATTACK_MOB'
   group: 'LEGENDARY'
@@ -5168,7 +5168,7 @@ abiding:
         - 'REPAIR'
 devour:
   display: '%group-color%吞噬者(Devour)'
-  description: "有機會對敵方玩家造成倍數傷害\n如果有堆疊流血效果."
+  description: "命中正流血的玩家時,有25-75％機率\n造成1-4點額外傷害.\n（冷卻：3秒）"
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5205,7 +5205,7 @@ devour:
         - 'EXTRA_DAMAGE:<random number>1-4</random number>'
 diminish:
   display: '%group-color%制裁(Diminish)'
-  description: "當這個效果正在生效, 下一次對你\n造成的攻擊傷害不會多過\n 你上一次承受傷害的 1/2."
+  description: "受玩家攻擊時,有4-23％機率擋下一半傷害.\n（冷卻：8秒）"
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5244,7 +5244,7 @@ diminish:
         - 'HALF_DAMAGE'
 disarmor:
   display: '%group-color%解除裝甲(Disarmor)'
-  description: "有少量機率令你的敵人身上一件裝甲脫下\nwhen they are at low health."
+  description: "命中玩家時,有0.4-2％機率\n使對方卸下一裝甲.\n（冷卻：6秒）"
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5301,7 +5301,7 @@ disarmor:
         - 'MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%'
 deathgod:
   display: '%group-color%垂死掙扎(Death God)'
-  description: "當你遭受傷害導致你的總血量低過(現有等級+4) \n將會回復您的生命值按照(現有等級+5)."
+  description: "受玩家攻擊且你血量低於9-11點時,\n有2-11％機率回復11-13點血量.\n（冷卻：7-15秒）"
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5334,7 +5334,7 @@ deathgod:
         - 'MESSAGE:&6&l* DEATH GOD * %victim%'
 insanity:
   display: '%group-color%精神錯亂(Insanity)'
-  description: "轉動你的斧頭如同瘋子.\n 有機會增加你對玩家造成的傷害\n當他們手持一把劍\n時受到傷害."
+  description: "命中使用劍的玩家時,有17-56％機率\n造成雙倍傷害.（冷卻：1秒）"
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5399,7 +5399,7 @@ insanity:
         - 'DOUBLE_DAMAGE'
 sniper:
   display: '%group-color%狙擊手(Sniper)'
-  description: "投擲物擊中頭部的話\n造成 3.5倍傷害."
+  description: "命中玩家的頭部時,有15-35％機率\n造成100-350％額外傷害.\n（冷卻：5秒）"
   applies-to: 'Bow'
   type: 'BOW'
   group: 'LEGENDARY'
@@ -5449,7 +5449,7 @@ sniper:
         - 'MESSAGE:&6&l** HEADSHOT ** %victim%'
 destruction:
   display: '%group-color%毀壞(Destruction)'
-  description: "攻擊時有機會造成傷害並且給予負面效果給周遭的敵人."
+  description: "受玩家攻擊時,有5-15％機率移除3-5格內敵人的\n力量,回復,速度,吸收及挖掘加速效果,\n並向對方造成1-2點真實傷害.\n（冷卻：10-15秒）"
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5513,7 +5513,7 @@ destruction:
         - 'MESSAGE:&e&l*** &eDesctruction &e&l*** &7(%victim name%) <aoe> radius=5 target=damageable </aoe>'
 extremeinsanity:
   display: '%group-color%極度錯亂extremeinsanity'
-  description: 轉動你的斧頭如同瘋子.\n 有機會增加你對玩家造成的傷害\n當他們手持一把劍\n時受到傷害.\n需要精神錯亂 VIII 才能生效."
+  description: "命中使用劍的玩家時,有4-25％機率\n造成雙倍傷害.\n（冷卻：4-8秒）\n此附魔需要套在精神錯亂Ⅷ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Axes'
   type: 'ATTACK'
   settings:
@@ -5584,7 +5584,7 @@ extremeinsanity:
         - 'DOUBLE_DAMAGE'
 megaheavy:
   display: '%group-color%超級重力(Mega Heavy)'
-  description: "降低敵人造成的弓箭傷害\n每 10% 以及每等級額外 2%\需要重力 V 才能使用."
+  description: "受使用弓的敵人攻擊時,有4-12％機率\n擋下12-20％傷害.（冷卻：6-9秒）.\n此附魔需要套在重力Ⅴ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE_BOW'
   settings:
@@ -5634,7 +5634,7 @@ megaheavy:
         - 'REMOVE_DAMAGE:20'
 bewitchedhex:
   display: '%group-color%擴展迷惑(BewitchedHex)'
-  description: "當一個目標被擴展迷惑所影響,\n一部分他們所造成的傷害會被降低\n當被攻擊，他們會承受更多傷害.\n需要 迷惑 IV 才能生效."
+  description: "命中玩家時,有6-16％機率透過降低自身20-75％傷害\n來向對方造成5-10點真實傷害.\n（冷卻：4秒）\n此附魔需要套在迷惑Ⅳ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Axes'
   type: 'ATTACK'
   settings:
@@ -5673,7 +5673,7 @@ bewitchedhex:
         - 'ADD_HARM:<random number>5-10</random number> %victim%'
 mightycleave:
   display: '%group-color%強烈巨斧斬擊(MightyCleave)'
-  description: "有機率對4格範圍以內造成最高8點傷害.\n需要 巨斧斬擊 VII 才能生效."
+  description: "命中玩家時,有4-9％機率\n對1-5格內的敵人\n造成1-8點真實傷害.\n（冷卻：12-10秒）\n此附魔需要套在巨斧斬擊Ⅶ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -5718,7 +5718,7 @@ mightycleave:
         - 'MESSAGE:&d&l** MIGHTY CLEAVE &7(%attacker name%)&d&l ** <aoe> radius=5 target=damageable </aoe>'
 mightycactus:
   display: '%group-color%仙人掌反甲(MightyCactus)'
-  description: "英雄附魔. 有機率停止敵人傷害\n並且反擊你的敵人同時不影響耐久度\n需要 仙人掌 II 才能生效."
+  description: "8-12％機率擋下玩家的攻擊,\n並向對方造成2-5點真實傷害.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6699,7 +6699,7 @@ shadowassassin:
         - 'DISTANCE_DAMAGE:5:1 %attacker%'
 rogue:
   display: '%group-color%惡棍(Rogue)'
-  description: "靈魂附魔. 造成最高 2.0x damage."
+  description: "命中玩家時,有13-19％機率消費100點靈魂\n來造成25-100％額外傷害.（冷卻：3秒）"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SOUL'
