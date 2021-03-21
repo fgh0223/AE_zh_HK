@@ -604,7 +604,7 @@ epicness:
         - 'PLAY_SOUND:GHAST_SCREAM'
 lifebloom:
   display: '%group-color%生命綻放'
-  description: "死亡時有20-50％機率為10格內\n的友方生物回復40點血量.\n（冷卻：10-15秒）"
+  description: "死亡時有20-50％機率為10格內\n的盟友回復40點血量.\n（冷卻：10-15秒）"
   applies-to: 'Leggings'
   type: 'DEATH'
   group: 'UNIQUE'
@@ -1002,7 +1002,7 @@ ravenous:
         - 'ADD_FOOD:<random number>1-4</random number> %attacker%'
 commander:
   display: '%group-color%首腦'
-  description: "被玩家攻擊時,有6-18％機率\n為5格內的友方生物提供7秒\n挖掘加速Ⅰ效果.（冷卻：6秒）"
+  description: "被玩家攻擊時,有6-18％機率\n為5格內的盟友提供7秒\n挖掘加速Ⅰ效果.（冷卻：6秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -3949,7 +3949,7 @@ creeperarmor:
         - 'ADD_HEALTH:<random number>1-2</random number>'
 spirits:
   display: '%group-color%精靈守護(Spirits)'
-  description: "受玩家攻擊時,有2-27％機率喚來3-5隻烈焰使者盟友,\n並為5格內的友方生物提供3秒回復Ⅰ效果.\n（冷卻：8點）"
+  description: "受玩家攻擊時,有2-27％機率喚來3-5隻烈焰使者盟友,\n並為5格內的盟友提供3秒回復Ⅰ效果.\n（冷卻：8點）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -4164,7 +4164,7 @@ impale:
         - 'POTION:SLOW:4:80 %victim%'
 protection:
   display: '%group-color%保護(Protection)'
-  description: "受玩家攻擊時,有6-12％機率為5-10格內的友方生物\n治癒中毒,噁心,凋零效果,且回復2-6點血量.\n（冷卻：20-25秒）"
+  description: "受玩家攻擊時,有6-12％機率為5-10格內的盟友\n治癒中毒,噁心,凋零效果,且回復2-6點血量.\n（冷卻：20-25秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5747,7 +5747,7 @@ mightycactus:
         - 'MESSAGE:&d&l** MIGHTY CACTUS ** &7(%victim name%)'
 guidedrocketescape:
   display: '%group-color%引導火箭逃離(GuidedRocketEscape)'
-  description: "當你血量低下時自動把你彈射到空中\n並且給予飛行效果 (等級 x 1秒).\n需要 火箭逃離 III 才能生效."
+  description: "當你血量低下時自動把你彈射到空中\n並且給予飛行效果 (等級 x 1秒).\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收.\n需要 火箭逃離 III 才能生效."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5786,7 +5786,7 @@ guidedrocketescape:
         - 'MESSAGE:&d&l** GUIDED ROCKET ESCAPE **%victim%'
 soulhardened:
   display: '%group-color%靈魂硬化修復(Soul Hardened)'
-  description: "最高有 50% 機會能夠抵擋敵人的 靈魂圈套, 裝甲會消耗較少耐久度.\n需要 硬化修復 III 才能生效."
+  description: "最高有 50% 機會能夠抵擋敵人的 靈魂圈套, 裝甲會消耗較少耐久度.\n需要 硬化修復 III 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'HEROIC'
@@ -5819,7 +5819,7 @@ soulhardened:
         - 'ADD_DURABILITY:-5 %victim%'
 polymorphicmetaphysical:
   display: '%group-color%意志清晰(Polymorphic Metaphysical)'
-  description: "受到傷害時有機率移除移動減速效果.\n最高等級時\n你只會收到10%時間的影響.\n需要 精神抖擻 IV 才能生效."
+  description: "受到傷害時有機率移除移動減速效果.\n最高等級時\n你只會收到10%時間的影響.\n需要 精神抖擻 IV 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5879,7 +5879,7 @@ soulbound:
         - 'KEEP_ON_DEATH'
 reinforcedtank:
   display: '%group-color%強化坦克忍耐'
-  description: "降低敵人使用斧頭造成的傷害\n 6% + 2% .\n需要 坦克忍耐 IV 才能生效."
+  description: "降低敵人使用斧頭造成的傷害\n 6% + 2% .\n需要 坦克忍耐 IV 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5922,7 +5922,7 @@ reinforcedtank:
         - 'REMOVE_DAMAGE:14 %victim%'
 epidemiccarrier:
   display: '%group-color%上級死靈法師'
-  description: "即將死亡的時候會召喚苦力怕\n以及負面效果為你復仇. 需要 死靈法師 VIII 才能生效."
+  description: "即將死亡的時候會召喚苦力怕\n以及負面效果為你復仇. 需要 死靈法師 VIII 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Leggings'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6018,7 +6018,7 @@ epidemiccarrier:
         - 'POTION:BLINDNESS:2:100 %attacker%'
 godlyoverload:
   display: '%group-color%超級生命超載'
-  description: "英雄附魔.\n強力地永久增加血量. \n需要  生命超載 III 才能生效."
+  description: "英雄附魔.\n強力地永久增加血量. \n需要  生命超載 III 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'HEROIC'
@@ -6042,7 +6042,7 @@ godlyoverload:
         - 'POTION:HEALTH_BOOST:4'
 reflectiveblock:
   display: '%group-color%反射格擋(Reflective Block)'
-  description: "超級影響附魔.\n有機率格擋部分傷害甚至全部格擋\n並且將傷害反射攻擊者\n 需要 格擋 III 才能生效."
+  description: "超級影響附魔.\n有機率格擋部分傷害甚至全部格擋\n並且將傷害反射攻擊者\n 需要 格擋 III 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6075,7 +6075,7 @@ reflectiveblock:
         - 'ADD_HARM:%damage% %attacker%'
 masterinquisitive:
   display: '%group-color%劍道大師(Master Inquisitive)'
-  description: "英雄附魔. 大幅提升擊殺怪物掉落經驗\n需要 劍道錘煉 IV 才能."
+  description: "英雄附魔. 大幅提升擊殺怪物掉落經驗\n需要 劍道錘煉 IV 才能.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'HEROIC'
@@ -6110,7 +6110,7 @@ masterinquisitive:
         - 'EXP:<math>(%exp% * (1.0 + 0.25 * %level%))*2.0</math> %victim%'
 planetarydeathbringer:
   display: '%group-color%死亡法師(Planetary Deathbringer)'
-  description: "英雄附魔.\n增加機率造成 1.5x 傷害. 死亡使者 III enchant on item to apply."
+  description: "英雄附魔.\n增加機率造成 1.5x 傷害. 死亡使者 III enchant on item to apply.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6140,7 +6140,7 @@ planetarydeathbringer:
         - 'INCREASE_DAMAGE:50 %attacker%'
 divineenlighted:
   display: '%group-color%神聖傷害轉化(Divine Enlighted)'
-  description: "英雄附魔. \n高機率受傷害的時候可以回血.\n需要 傷害轉化III 才能生效."
+  description: "英雄附魔. \n高機率受傷害的時候可以回血.\n需要 傷害轉化III 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6170,7 +6170,7 @@ divineenlighted:
         - 'ADD_HEALTH:<random number>1-4</random number> %victim%'
 lethalsniper:
   display: '%group-color%致命狙擊(Lethal Sniper)'
-  description: "英雄附魔.\n增加爆頭機率以及加成傷害\n投擲物擊中頭部的話造成 4.5倍傷害\n 狙擊手."
+  description: "英雄附魔.\n增加爆頭機率以及加成傷害\n投擲物擊中頭部的話造成 4.5倍傷害\n 狙擊手.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'HEROIC'
@@ -6226,7 +6226,7 @@ lethalsniper:
         - 'MESSAGE:&d&l** LETHAL HEADSHOT ** %victim%'
 atomicdetonate:
   display: '%group-color%原子起爆(Atomic Detonate)'
-  description: "英雄附魔. 爆破附近最大7x7空間\n 需要 起爆 IX enchant\non item to apply."
+  description: "英雄附魔. 爆破附近最大7x7空間\n 需要 起爆 IX enchant\non item to apply.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Tools'
   type: 'MINING'
   group: 'HEROIC'
@@ -6278,7 +6278,7 @@ atomicdetonate:
         - 'TRENCH:7'
 titantrap:
   display: '%group-color%泰坦圈套(Titan Trap)'
-  description: "英雄附魔\n有機會給予長久的減速效果給敵人\n需要圈套 III 才能生效."
+  description: "英雄附魔\n有機會給予長久的減速效果給敵人\n需要圈套 III 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6341,7 +6341,7 @@ bidirectionalteleportation:
         - 'PULL_CLOSER:3.0 %victim%'
 masterblacksmith:
   display: '%group-color%大師工匠(Master Blacksmith)'
-  description: "有機率修復你耐久度最低的裝甲2-3耐久度\n攻擊敵方玩家時觸發\n但是續發時會令你做成只有 75%-100% 傷害.\n需要 鐵匠 V enchantment on item to apply."
+  description: "有機率修復你耐久度最低的裝甲2-3耐久度\n攻擊敵方玩家時觸發\n但是續發時會令你做成只有 75%-100% 傷害.\n需要 鐵匠 V enchantment on item to apply.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6391,7 +6391,7 @@ masterblacksmith:
         - 'MESSAGE:&d&l** MASTER BLACKSMITH ** %attacker%'
 vengefuldiminish:
   display: '%group-color%復仇制裁(Vengeful Diminish)'
-  description: "確保下次對你的攻擊\n只會造成 50% 傷害\n任何過多的傷害將會反彈回攻擊者\n需要 制裁 VI ."
+  description: "確保下次對你的攻擊\n只會造成 50% 傷害\n任何過多的傷害將會反彈回攻擊者\n需要 制裁 VI .\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6442,7 +6442,7 @@ vengefuldiminish:
         - 'ADD_HARM:%damage% %attacker%'
 alienimplants:
   display: '%group-color%光合轉化(Alien Implants)'
-  description: "光合作用的2x效果\n最高等級將保持飽食度滿\n 需要光合作用 III."
+  description: "光合作用的2x效果\n最高等級將保持飽食度滿\n 需要光合作用 III.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Helmets'
   type: 'REPEATING'
   time: 5
@@ -6476,7 +6476,7 @@ alienimplants:
         - 'ADD_FOOD:10'
 etherealdodge:
   display: '%group-color%通靈閃避(Ethereal Dodge)'
-  description: "增加閃避機率,\n觸發時小機率提供短暫 速度V 效果\n需要 閃避V 才能生效."
+  description: "增加閃避機率,\n觸發時小機率提供短暫 速度V 效果\n需要 閃避V 才能生效.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6500,7 +6500,7 @@ etherealdodge:
         - 'POTION:SPEED:4:80 %victim%'
 paladinarmored:
   display: '%group-color%聖鬥士抵抗(Paladin Armored)'
-  description: "抵擋 10 + 每等級5 敵人造成的劍傷害. \n每次受傷的時候都會有機會觸發\n需要 傷害抵抗 IV."
+  description: "抵擋 10 + 每等級5 敵人造成的劍傷害. \n每次受傷的時候都會有機會觸發\n需要 傷害抵抗 IV.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6543,7 +6543,7 @@ paladinarmored:
         - 'NEGATE_DAMAGE:30 %attacker%'
 demoniclifesteal:
   display: '%group-color%惡魔吸血(Demonic Lifesteal)'
-  description: "相比正常時候回復更多的血量\n需要 吸血 V."
+  description: "相比正常時候回復更多的血量\n需要 吸血 V.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6588,7 +6588,7 @@ demoniclifesteal:
         - 'MESSAGE:&d&l** DEMONIC LIFESTEAL ** &7(&c- %random%HP&7) %attacker%'
 deepbleed:
   display: '%group-color%深度流血(Deep Bleed)'
-  description: "英雄附魔\n有機率影響敵人，提供緩速以及造成更多傷害\n需要  VI."
+  description: "英雄附魔\n有機率影響敵人，提供緩速以及造成更多傷害\n需要  VI.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6659,7 +6659,7 @@ deepbleed:
         - 'ADD_HARM:<random number>1-4</random number> %victim%'
 shadowassassin:
   display: '%group-color%幻影刺客(Shadow Assassin)'
-  description: "英雄附魔. \n如果你愈接近你的敵人\n你會造成更多傷害(最高 1.875x) \n但如果你距離敵人2 格外\n你會造成比正常少啲傷害.\nRequires Assassin V."
+  description: "英雄附魔. \n如果你愈接近你的敵人\n你會造成更多傷害(最高 1.875x) \n但如果你距離敵人2 格外\n你會造成比正常少啲傷害.\nRequires Assassin V.\n（冷卻：3秒）\n此附魔需要套在荊棘之鎧Ⅱ之上,\n且無法被黑色卷軸所回收."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -7054,7 +7054,7 @@ divineimmolation:
         - 'MESSAGE:&c&l** DIVINE IMMOLATION ** <aoe> radius=5 target=damageable </aoe>'
 paradox:
   display: '%group-color%Paradox'
-  description: "Passive soul enchantment.\nHeals all nearby allies in a massive\narea around you for a portion of\nall damage dealt to you."
+  description: "受玩家攻擊時,有13-19％機率使用5點靈魂\n來為5-7格內的盟友回復\n你所受的一半傷害值的血量.\n（冷卻：5秒）"
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'SOUL'
@@ -7103,7 +7103,7 @@ paradox:
         - 'MESSAGE:&c&l** PARADOX ** <aoe> radius=7 target=undamageable </aoe>'
 soulgrind:
   display: '%group-color%SoulGrind'
-  description: 'Random chance to get a souls for killing mobs.'
+  description: '4-8％機率使擊殺的怪物掉落1-10點靈魂石.\n（冷卻：80-55秒）'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'MASTERY'
@@ -7127,7 +7127,7 @@ soulgrind:
         - 'CONSOLE_COMMAND:ae giveitem %attacker name% soulgem 1 10'
 neutralize:
   display: '%group-color%Neutralize'
-  description: "Chance to disable all enemy defensive enchantment's for 7 seconds.\nThis effect can stack with silence."
+  description: "1-6％機率使命中的玩家無法使用\n一些防衛用自訂附魔效果.\n（冷卻：140-20秒）\n此附魔能與silence併用"
   applies-to: "Swords"
   type: ATTACK
   group: MASTERY
@@ -7197,7 +7197,7 @@ neutralize:
         - MESSAGE:&4&l* Neutralized&r &4[5s] &4&l* %victim%
 halloweenify:
   display: '%group-color%Halloweenify'
-  description: 'Chance to replace your opponents helmet to a pumpkin for a short time.'
+  description: '1-6％機率使命中的玩家的頭盔\n轉為南瓜頭2-4秒.（冷卻：20秒）'
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'MASTERY'
@@ -7242,7 +7242,7 @@ halloweenify:
         - 'PLAY_SOUND_OUTLOUD:ANVIL_DROP'
 markofthebeast:
   display: '%group-color%Mark of the Beast'
-  description: "Once an enemy is afflicted with the mark\nall incoming damage is increased by 2x for\nup to 5 seconds"
+  description: "受玩家攻擊時,有4-16％機率\n增加對方50％攻擊力2-4秒.\n（冷卻：600-100秒）"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'MASTERY'
@@ -7317,7 +7317,7 @@ markofthebeast:
         - 'WAIT:20'
 horrify:
   display: '%group-color%Horrify'
-  description: 'Chance to inflict enemies within a 32x32 radius with &6Horror&r.'
+  description: '受玩家攻擊時,有1-5％機率使32格內的敵人\n遭受2秒混亂XXIV,緩慢XXIV及挖掘疲勞XXIV效果.\n（冷卻：120秒）'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'MASTERY'
@@ -7358,7 +7358,7 @@ horrify:
         - 'MESSAGE:&4&l** HORRIFY ** <aeo> radius=32 target=damageable </aoe>'
 chainlifesteal:
   display: '%group-color%Chain Lifesteal'
-  description: 'A chance to regain health from multiple\nenemies near your damaged target based on level'
+  description: '近身攻擊玩家時,有1-4％機率\n偷取6格內的敵人各1-3點血量.\n（冷卻：120秒）'
   applies-to: 'Chestplate'
   type: 'ATTACK'
   group: 'MASTERY'
@@ -7378,8 +7378,8 @@ chainlifesteal:
         - 'STEAL_HEALTH:<random number>1-3</random number> <aoe> radius=6 target=damageable </aoe>'
         - 'MESSAGE:&4&l** CHAIN LIFESTEAL ** &7(-5 &cHP&7) <aoe> radius=6 target=damageable </aoe>'
 soulsiphone:
-  display: '%group-color%Soul Siphone'
-  description: "Proc'ing on outgoing damage events this enchant siphons souls\nand durability from enemies in large quantities!."
+  display: '%group-color%命運逆流'
+  description: "受玩家攻擊時,有6-13％機率使用200點靈魂\n來使對方的裝甲耐久度遭受10-30點損害.\n（冷卻：60秒）"
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'MASTERY'
