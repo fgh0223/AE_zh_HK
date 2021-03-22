@@ -3868,7 +3868,7 @@ valor:
         - 'REMOVE_DAMAGE:<random number>18-22</random number> %victim%'
 pacify:
   display: '%group-color%安撫(Pacify)'
-  description: "命中敵人時,有12-30％機率擋下對方的攻擊,\n並向對方造成1-4點真實傷害.\n（冷卻：3秒）"
+  description: "命中敵人時,有12-30％機率取消自身的傷害,\n只向對方造成1-4點真實傷害.\n（冷卻：3秒）"
   applies-to: 'Bow'
   type: 'BOW;BOW_MOB'
   group: 'ULTIMATE'
@@ -7054,7 +7054,7 @@ divineimmolation:
         - 'MESSAGE:&c&l** DIVINE IMMOLATION ** <aoe> radius=5 target=damageable </aoe>'
 paradox:
   display: '%group-color%Paradox'
-  description: "受玩家攻擊時,有13-19％機率使用5點靈魂\n來為5-7格內的盟友回復\n你所受的一半傷害值的血量.\n（冷卻：5秒）\n靈魂附魔"
+  description: "受玩家攻擊時,有13-19％機率使用5點靈魂\n來為5-7格內的盟友回復\n等同對方25-50％傷害值的血量.\n（冷卻：5秒）\n靈魂附魔"
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'SOUL'
