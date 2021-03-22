@@ -3769,7 +3769,7 @@ tank:
         - 'REMOVE_DAMAGE:8 %victim%'
 unfocus:
   display: '%group-color%專注分散(Unfocus)'
-  description: "命中玩家時,有7-32％機率擋下對方50％傷害,\n並使對方遭受2-5秒\n混亂Ⅰ—Ⅱ效果.\n(冷卻：4秒）"
+  description: "命中玩家時,有7-32％機率降低你50％傷害\n來使對方遭受2-5秒混亂Ⅰ—Ⅱ效果.\n(冷卻：4秒）"
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ULTIMATE'
